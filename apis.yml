@@ -1,23 +1,78 @@
 aid: autogenai
+
 name: Autogenai
-description: 'Autogenai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://autogenai.com/wp-content/uploads/2024/10/og-image-min.jpg
+
+description: 'Autogenai provides AI-powered proposal writing solutions for businesses and government agencies. Their platform offers tools for qualifying, extracting, managing, writing, researching, and reviewing content, with integrations and security features. AutogenAI aims to streamline proposal creation, improve win rates, and support impact pilots in public services, serving enterprise, federal, and grant‑writing sectors.'
+
 url: https://raw.githubusercontent.com/api-evangelist/autogenai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- AI
+- ProposalWriting
+- Enterprise
+- Government
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://trust.autogenai.com/
+- type: WellKnown
+  url: well-known/autogenai-well-known.yml
+- type: Hosts
+  url: hosts/autogenai-hosts.yml
+- type: Vendors
+  url: vendors/autogenai-vendors.yml
+- type: Security
+  url: https://autogenai.com/platform/security/
+- type: PrivacyPolicy
+  url: https://autogenai.com/privacy-policy/
+- type: ChangeLog
+  url: https://autogenai.com/whats-new/
+- type: Blog
+  url: https://autogenai.com/blog/words-matter/
+- type: GitHubOrganization
+  url: https://github.com/autogenai
+- type: TrustCenter
+  url: security/autogenai-trust-center.yml
+- type: DomainSecurity
+  url: security/autogenai-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/autogenai
+  url: https://autogenai.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL contracts were found on the API host despite accessible documentation pages.
+  evidence:
+    - url: https://api.autogenai.com/openapi.json
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

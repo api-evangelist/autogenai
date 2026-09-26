@@ -1,0 +1,22 @@
+generated: 2026-09-26
+method: probed
+source: ["https://autogenai.com/privacy-policy/","https://autogenai.com/autogenai-accessibility-policy/"]
+signals:
+  data_subject_request:
+    evidence:
+      source: https://autogenai.com/privacy-policy/
+      http_status: 200
+      fetched: /tmp/privacy.html
+      quote: "Request access to your personal data (commonly known as a “data subject access request”)."
+  data_retention:
+    evidence:
+      source: https://autogenai.com/privacy-policy/
+      http_status: 200
+      fetched: /tmp/privacy.html
+      quote: "To determine the appropriate retention period for personal data, we consider the amount, nature and sensitivity of the personal data..."
+  accessibility_conformance:
+    evidence:
+      source: https://autogenai.com/autogenai-accessibility-policy/
+      http_status: 200
+      fetched: /tmp/accessibility.html
+      quote: "AutogenAI Accessibility Policy"

@@ -1,0 +1,14 @@
+{
+  "repo": "autogenai",
+  "feeds": [
+    {
+      "source": "https://autogenai.com/whats-new/",
+      "feed_url": "https://autogenai.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-10-03T12:30:02Z"
+}
